@@ -1,0 +1,130 @@
+<%- include("partials/header")%>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+  </head>
+
+  <body>
+    <section id="home">
+      <h4>Hello <%= name%>
+      </h4>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit" , class="log-btn">Logout</button>
+      </form>
+
+      <!-- <div class="upper">  -->
+      <div class="main">
+        <h1>FoodGlitter</h1>
+        <form id="form" role="search">
+          <input type="search" id="query" name="q" placeholder="Tell us what do you want to eat..." aria-label="Search through site content">
+          <button class="search">Search</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    <section id="services-container">
+      <!-- <h1 class="h-primary center"> Our Services</h1> -->
+      <div id="services">
+        <div class="box">
+          <img src="/images/burger.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Order Online</h2>
+          <!-- <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae nemo dolore quis
+                  sequi. Consequuntur itaque odit a facere necessitatibus nam vitae quidem, aliquam eius illo id
+                  similique eos provident voluptatibus et rem eaque.</p> -->
+        </div>
+      </div>
+      <div id="services">
+        <div class="box">
+          <img src="/images/dineout.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Dine Out</h2>
+         
+        </div>
+      </div>
+      <div id="services">
+        <div class="box">
+          <img src="/images/party.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Club & Party</h2>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <img src="/images/menu.jpg"  class= "img" alt=""  width="440px" height="400px">
+      <div class="content">
+        <h2>Hungry??</h2>
+        <p>Have Menuuu..!!</p>
+        <div class="menu"><a href ="/menu">Menu</a></div>
+      </div>
+      
+    </section>
+
+    <section id="cuisine">
+      <div class="food">
+           <h1>Cuisine Special</h1>
+           <p> Why try food of one region when you can have all of them!</p>
+      </div>
+
+    </section>
+    <section id="region">
+      <!-- <h1 class="h-primary center"> Our Services</h1> -->
+      <div id="services">
+        <div class="box">
+          <img src="/images/indian.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Indian Food</h2>
+          <!-- <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae nemo dolore quis
+                  sequi. Consequuntur itaque odit a facere necessitatibus nam vitae quidem, aliquam eius illo id
+                  similique eos provident voluptatibus et rem eaque.</p> -->
+        </div>
+      </div>
+      <div id="services">
+        <div class="box">
+          <img src="/images/italian.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Italian Food</h2>
+         
+        </div>
+      </div>
+      <div id="services">
+        <div class="box">
+          <img src="/images/chinese.jpg" alt="" height="200px" width="300px">
+          <h2 class="h-secondary center">Chinese Food</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="region">
+      <div id="services">
+      <div class="box">
+        <img src="/images/meditarranean.jpg" alt="" height="200px" width="300px">
+        <h2 class="h-secondary center">Meditarranean Food</h2>
+      </div>
+    </div>
+    <div id="services">
+      <div class="box">
+        <img src="/images/french.jpg" alt="" height="200px" width="300px">
+        <h2 class="h-secondary center">French Food</h2>
+      </div>
+    </div>
+    <div id="services">
+      <div class="box">
+        <img src="/images/thai.jpg" alt="" height="200px" width="300px">
+        <h2 class="h-secondary center">Thai Food</h2>
+      </div>
+    </div>
+    </section>
+    <%- include("partials/footer")%>
+    
+  
+  </body>
+
+  </html>
+  
+
+  
